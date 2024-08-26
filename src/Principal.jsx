@@ -52,8 +52,9 @@ function Principal() {
         </Swiper>
       </div>
 
-      <section>
-      </section>
+      <div>
+        <a href=""><img className='absolute right-12 bottom-4 z-50' src="./src/assets/Logo Whatsapp.png" alt="Logo Whatsapp" /></a>
+      </div>
     </div>
   );
 }

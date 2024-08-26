@@ -10,7 +10,7 @@ function Header() {
         <header className='flex justify-between bg-black text-slate-200 items-center p-3'>
           <img className=' object-contain' src="./src/assets/Logo Verona Negócios.png" alt="Verona Imobiliaria Logo" />
           
-          <nav className='flex items-center text-lg font-normal list-none gap-24'>
+          <nav className='flex items-center text-sm font-bold uppercase list-none gap-32 text-dimGray'>
             <li><a href="">Locações</a></li>
             <li><a href="">Categoria</a></li>
             <li><a href="">Contato</a></li>
