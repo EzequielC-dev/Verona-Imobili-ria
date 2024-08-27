@@ -1,14 +1,15 @@
 import { useState } from "react";
-import "./css/animacoes.css";
-import "./css/fotos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import '../../css/animacoes.css'
+import './fotos.css'
 import "swiper/css";
 import 'swiper/less/navigation';
 import 'swiper/less/pagination';
 
-function Principal() {
+function Home() {
   return (
     <div>
+    
       <div className="fotos-main">
         <Swiper
           slidesPerView={1}
@@ -55,8 +56,11 @@ function Principal() {
       <div>
         <a href=""><img className='absolute right-12 bottom-4 z-50' src="./src/assets/Logo Whatsapp.png" alt="Logo Whatsapp" /></a>
       </div>
+
+      <div>
+      </div>
     </div>
   );
 }
 
-export default Principal;
+export default Home;

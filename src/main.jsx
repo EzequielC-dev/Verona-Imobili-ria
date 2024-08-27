@@ -1,9 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Header from './Header.jsx'
-import Principal from './principal.jsx'
-import Filtro from './Filtro.jsx'
-import './index.css'
+import App from './App'
+import './css/index.css'
 import { register } from 'swiper/element/bundle'
 register()
 import 'swiper/css'
@@ -13,8 +11,6 @@ import 'swiper/css/scrollbar'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header />
-    <Principal />
-    <Filtro />
+    <App></App>
   </StrictMode>,
 )
