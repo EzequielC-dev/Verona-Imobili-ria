@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from 'react-router-dom';
 import '../../css/animacoes.css'
 import './fotos.css'
 import "swiper/css";
@@ -8,7 +9,7 @@ import 'swiper/less/pagination';
 
 function Home() {
   return (
-    <div>
+    <main>
     
       <div className="fotos-main">
         <Swiper
@@ -20,7 +21,7 @@ function Home() {
         >
           <SwiperSlide>
             <img
-              className="brightness-50 "
+              className="backdrop-brightness-50 "
               src="./src/assets/Imagem Fundo Home 1.jpg"
               alt="Imagem fundo Home 1"
               id="1"
@@ -28,7 +29,7 @@ function Home() {
           </SwiperSlide>
           <SwiperSlide>
             <img
-              className="brightness-50 "
+              className="brightness-50"
               src="./src/assets/Imagem fundo home 2.jpg"
               alt="Imagem fundo Home 2"
               id="2"
@@ -53,13 +54,18 @@ function Home() {
         </Swiper>
       </div>
 
-      <div>
+      <article>
         <a href=""><img className='absolute right-12 bottom-4 z-50' src="./src/assets/Logo Whatsapp.png" alt="Logo Whatsapp" /></a>
-      </div>
-
-      <div>
-      </div>
-    </div>
+      </article>
+      <section className="bg-neutral-950 border-t-1 pl-32 pr-32">
+          <div className=" flex justify-center font-semibold text-3xl text-slate-50 p-24 w-full">
+            <h1 className="melhores-vendas border-b-2 text-xl rounded-sm pb-1 uppercase">Melhores Oportunidades:</h1>
+          </div>
+          <div className="text-slate-50">
+            <Link to=''>Casas ▶<Link className="pl-2" to=''>Comprar</Link></Link>
+          </div>
+      </section>
+    </main>
   );
 }
 

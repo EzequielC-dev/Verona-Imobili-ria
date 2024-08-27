@@ -1,5 +1,5 @@
 .fotos-main img{
     width: 100%;
     object-fit: cover;
-    max-height: 89vh;
+    max-height: 100vh;
 }

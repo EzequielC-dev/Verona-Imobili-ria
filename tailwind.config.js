@@ -8,10 +8,4 @@ export default {
     extend: {},
   },
   plugins: [],
-  colors: {
-    dimGray: '#5E4D2E',
-    night: '#0F0F0E',
-    dourado: '#5E4D2E',
-    quasePreto: '#010100',
-  }
 }
