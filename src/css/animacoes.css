@@ -1,0 +1,23 @@
+#menu.ativo {
+    rotate: 90deg;
+    transition: 1s;
+}
+
+.menu-click {
+    display: none;
+}
+
+/*bg-black absolute right-0 top-16 flex justify-center gap-12 p-8 rounded-lg w-full' */
+
+.menu-click.ativado {
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 32px;
+    border-radius: 8px;
+    width: 100%;
+}
