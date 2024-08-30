@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../css/animacoes.css'
 import { Link } from "react-router-dom";
 
 function Header() {
+
   const menuClicks = document.querySelector('.menu-click');
   function clickMenu(e) {
     e.target.classList.toggle('ativo');
@@ -11,7 +12,6 @@ function Header() {
     }
     menuClick();
   }
-
 
   return (
     <>

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Home from './pages/home/home';
-import Locacoes from './pages/locacoes/index'
-import Contato from './pages/contato/contato'
+import Locacoes from './pages/locacoes/index';
+import Contato from './pages/contato/contato';
 
 function RoutesApp() {
     return(
