@@ -1,0 +1,60 @@
+.burger {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .burger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .burger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Estilo do menu de opções */
+  .menu-options {
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: black;
+  }
+  
+  .menu-options.show {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    position: absolute;
+    top: 3.4rem;
+    padding: 1.5rem;
+    right: 0;
+    border-bottom-left-radius: 0.2rem;
+    animation: slideDown 0.3s ease;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
